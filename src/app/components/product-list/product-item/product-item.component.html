@@ -1,0 +1,18 @@
+<div class="card mb-4 shadow-sm">
+    <img class="bd-placeholder-img card-img-top" width="100%" src="https://th.bing.com/th/id/OIP.YjhJ70U8l0LflqNh3hIfPQHaE7?pid=ImgDet&w=178&h=118&c=7&dpr=1.5">
+    <div class="card-body">
+         <p class="card-text">
+             <strong> 
+                   {{ vehicleItem.salesPrice | currency:'INR'}} 
+            </strong>
+         </p>
+        <p class="card-text">{{ vehicleItem.modelMaster.name }}</p>
+        <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+                <button  class="btn btn-sm btn-primary product-btn" routerLink="">Buy Car</button>
+                <button  class="btn btn-sm btn-primary product-btn" (click)="routeToVehicle(vehicleItem.id)">View Car</button> 
+            </div>
+        </div>
+    </div>
+</div>  
+            
